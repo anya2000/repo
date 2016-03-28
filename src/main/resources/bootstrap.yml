@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ContentRepository
+
+  profiles:
+    active: dev    
+
+  ccloud:
+    config:
+      env: default # optional
+      label: master # optional
+      uri: http://localhost:9000 # remote configuration server uri
+      failFast: true # true = cause the server to fail if remote configuration init fails
